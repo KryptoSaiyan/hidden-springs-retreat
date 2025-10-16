@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rates | Hidden Springs Retreat</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rates - Hidden Springs Retreat</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .rates-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 2rem;
+      padding: 0 1rem;
+    }
+
+    .rate-card {
+      background-color: #f1efe8;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .rate-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .rate-header {
+      background-color: #003366;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .rate-body {
+      padding: 1.5rem;
+      color: #003366;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .rate-price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #001f3f;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .rate-card {
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>Hidden Springs Retreat</header>
@@ -18,16 +69,47 @@
   </nav>
 
   <main>
-    <h2>Rates & Packages</h2>
-    <ul>
-      <li>Weekend Stay (Fri–Sun): <strong>Call for reservations</strong></li>
-      <li>Week Stay (7 nights): <strong>Call for reservations</strong></li>
-      <li>Group Packages: <strong>Contact us for custom rates</strong></li>
-      <li>Day Pass (includes amenities): <strong>$40/person</strong></li>
-    </ul>
+    <section>
+      <h2>Rates & Lodging Options</h2>
+      <p>Relax and enjoy the natural beauty of Hidden Springs Retreat. Choose the perfect stay for your visit below.</p>
+
+      <div class="rates-container">
+        <div class="rate-card">
+          <div class="rate-header">Cabin Rentals</div>
+          <div class="rate-body">
+            Cozy, air-conditioned cabins with kitchenettes and full baths.
+            <div class="rate-price">$125 / night</div>
+          </div>
+        </div>
+
+        <div class="rate-card">
+          <div class="rate-header">RV Sites</div>
+          <div class="rate-body">
+            Full hook-up RV spots with picnic tables and fire pits.
+            <div class="rate-price">$55 / night</div>
+          </div>
+        </div>
+
+        <div class="rate-card">
+          <div class="rate-header">Tent Camping</div>
+          <div class="rate-body">
+            Shaded tent sites near the creek, with access to restrooms and showers.
+            <div class="rate-price">$35 / night</div>
+          </div>
+        </div>
+
+        <div class="rate-card">
+          <div class="rate-header">Day Pass</div>
+          <div class="rate-body">
+            Enjoy hiking, swimming, and fishing for the day.
+            <div class="rate-price">$10 / person</div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>&copy; 2025 Hidden Springs Retreat</footer>
+  <footer>&copy; 2025 Hidden Springs Retreat | All Rights Reserved</footer>
 </body>
 </html>
 
